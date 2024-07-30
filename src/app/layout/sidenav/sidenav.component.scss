@@ -1,0 +1,52 @@
+/* Define a mixin for common styles */
+@mixin menu-item {
+  @apply text-gray-700 no-underline flex items-center p-2.5 rounded-lg transition-all duration-300;
+
+  .menu-icon {
+    @apply text-2xl mr-2.5;
+  }
+
+  .menu-text {
+    // Additional styles for menu text if needed
+  }
+}
+
+.sidebar {
+  @apply bg-gray-100 w-52 p-5 fixed h-full top-0 left-0 overflow-x-hidden mt-12 ;
+}
+
+.sidebar ul {
+  @apply list-none p-0;
+}
+
+.sidebar li {
+  @apply mb-2.5;
+}
+
+.sidebar li a {
+  @include menu-item;
+
+  &:hover {
+    @apply bg-[#686BF2] text-white; /* Updated hover color */
+  }
+
+  &.active {
+    @apply text-white bg-[#686BF2]; /* Active state */
+  }
+
+  &.active:hover {
+    @apply bg-[#E0E7FF]; /* Darker shade for active hover */
+  }
+}
+
+.sub-menu {
+  @apply pl-5; /* Adjust the value to your desired padding */
+}
+
+.hideSidebar {
+  @apply transform -translate-x-full opacity-0 transition-transform duration-300;
+}
+
+.showSidebar {
+  @apply transform translate-x-0 opacity-100 transition-transform duration-300;
+}

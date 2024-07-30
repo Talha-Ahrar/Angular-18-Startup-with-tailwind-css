@@ -1,0 +1,27 @@
+<mat-toolbar class="bg-gray-100 text-gray-800 shadow-lg fixed top-0 left-0 w-full z-10">
+  <button
+    mat-icon-button
+    class="text-[#686BF2] bg-gray-50 w-10 h-10 flex items-center justify-center transition-shadow "
+    aria-label="Toggle Sidebar"
+    (click)="toggleSidebar()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <strong class="ml-4 text-[#686BF2] ">Angular 18 Startup</strong>
+  <span class="flex-1"></span>
+  <button
+    mat-icon-button
+    class="text-[#686BF2] transition-transform hover:scale-110"
+    aria-label="Notification icon button"
+  >
+    <mat-icon>notifications</mat-icon>
+  </button>
+  <button
+    mat-button
+    routerLink="/profile"
+    routerLinkActive="active"
+    class="text-[#686BF2]  bg-gray-50 rounded-lg py-1 px-3 transition-transform hover:scale-105"
+  >
+   <strong>Profile</strong>
+  </button>
+</mat-toolbar>
