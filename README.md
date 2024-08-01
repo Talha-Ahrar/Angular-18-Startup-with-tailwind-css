@@ -1,5 +1,5 @@
 # Angular 18 Startup Template with Tailwind CSS
-
+VIEW SAMPLE : https://www.youtube.com/watch?v=FdqTSpNKBW8
 ## Overview
 
 This repository offers a modern Angular 18 starter project integrated with Tailwind CSS. It provides a responsive and efficient setup for Angular applications, featuring a utility-first CSS framework for fast and customizable UI development.
